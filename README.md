@@ -3,6 +3,6 @@
 - Meant to refamiliarize myself with basic HTML, CSS, JS after a break
 
 - JS Practice: Basic JS functionality, DOM Manipulation, & Scope
-- CSS Practice:  Grid & Flexbox,  
+- CSS Practice: Basic CSS Styling & Functionality Grid & Flexbox
 
 Live Link: 
