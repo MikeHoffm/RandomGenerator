@@ -5,4 +5,4 @@
 - JS Practice: Basic JS functionality, DOM Manipulation, & Scope
 - CSS Practice: Basic CSS Styling & Functionality Grid & Flexbox
 
-Live Link: 
+Live Link: https://mikehoffm.github.io/RandomGenerator/
