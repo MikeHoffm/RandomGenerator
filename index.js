@@ -1,18 +1,19 @@
-/* Concept
-
-Select the element with class .randomize on the HTML
-when clicked change to a different letter of the alphabetet
-*/
+// ** Concept **
+// Use DOM Manipulation to generate a random letter, & number between 0-100
+// TO DO  - CSS: Edit to be visually appealing
+// TO DO - JS : Hide functionality from global scope, add sound effects
 
 // DOM Buttons
 const letterBtn = document.querySelector('#letter-btn');
-const letterContain = document.querySelector('.letter-contain');
-
 const numBtn = document.querySelector('#num-btn');
+const resetBtn = document.querySelector('#reset-btn');
+
+// DOM Elements - Other
+const letterContain = document.querySelector('.letter-contain');
 const numContain = document.querySelector('.num-contain');
 
 // When button is clicked, change text
-numBtn.onclick = () => console.log('Clicked');
+resetBtn.onclick = () => console.log('Clicked');
 
 // Create a function randomize() to randomly select a letter from the alphabet
 
@@ -40,13 +41,12 @@ function randomNum() {
   return randomNum;
 }
 
-// When letter button is clicked, run function that changes letterContainer innertext
+// Letter button functionality
 function changeLetter() {
   letterContain.innerText = randomLetter();
 }
 
 letterBtn.onclick = () => changeLetter();
-// when button is clicked, change to random letter
 
 // Number button functionality
 function changeNum() {
@@ -54,3 +54,10 @@ function changeNum() {
 }
 
 numBtn.onclick = () => changeNum();
+
+// Reset button functionality
+function resetAll() {
+  numContain.innerText = 0;
+  letterContain.innerText = 'A';
+}
+resetBtn.onclick = () => resetAll();
